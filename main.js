@@ -93,7 +93,7 @@ function filterItems(e) {
   // 2. Перебираем циклом все найденные теги li с задачами
   items.forEach(function (item) {
     // Получаем текст задачи из списка и переводим его в нижний регистр
-    let itemText = item.firstChild.textContent.toLowerCase();
+    let itemText = item.firstElementChild.textContent.toLowerCase();
 
     // Проверяем вхождение искомой подстроки в текст задачи
     if (itemText.indexOf(searchedText) != -1) {
